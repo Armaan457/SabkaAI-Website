@@ -20,7 +20,9 @@ export function ViewGuidelines() {
               <li className="text-base md:text-lg font-semibold">
                 Teams of 2-5 participants are allowed.
               </li>
-
+              <li className="text-base md:text-lg font-semibold">
+                Cross institutes team participation is allowed.
+              </li>
               <li className="text-base md:text-lg font-semibold">
                 All submissions must be original and created during the
                 hackathon.
