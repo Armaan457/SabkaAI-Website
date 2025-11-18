@@ -28,8 +28,7 @@ const faqs = [
   {
     question: "What is the team size limit?",
     answer:
-      "Teams must have 2-5 members. You need to form a team with at least one other member and can have up to 4 other members.",
-  },
+      "Teams must consist of 2 to 5 members. You need to form a team with at least one other member and may include up to four additional members. Cross Institute team participation is allowed.",},
   {
     question: "Who can participate in the IndiaAI Impact Hackathon?",
     answer:

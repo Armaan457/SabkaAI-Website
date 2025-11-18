@@ -56,7 +56,12 @@ export function Hero() {
                 <Button
                   variant="outline"
                   className="text-base px-6 py-6 rounded-lg border-muted-foreground/30"
-                  onClick={() => window.open('https://impact.indiaai.gov.in/themes', '_blank')}
+                  onClick={() => {
+                    const guidelinesSection = document.getElementById('guidelines');
+                    if (guidelinesSection) {
+                      guidelinesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                 >
                   View Guidelines
                 </Button>
