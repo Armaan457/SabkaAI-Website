@@ -18,7 +18,7 @@ export function RegistrationForm() {
       window.open(HACKATHON_CONFIG.GOOGLE_FORM_URL, "_blank");
     } else {
       alert(
-        "Registration will open soon! Please check back later for the Google Form link."
+        "Registration will open soon! Please check back later for the Devpost link."
       );
     }
   };
@@ -54,7 +54,7 @@ export function RegistrationForm() {
               onClick={handleRegistration}
               className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600 text-lg py-6"
             >
-              Register via Google Form
+              Register via Devpost
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
           </CardContent>
