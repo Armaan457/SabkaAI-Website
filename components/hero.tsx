@@ -49,7 +49,7 @@ export function Hero() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button
                   className="bg-[#00BFA5] hover:bg-[#00A895] text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200"
-                  onClick={() => window.open('https://forms.gle/ZWeHuWhNrvVq2MGM6', '_blank')}
+                  onClick={() => window.open('https://innovation-challenge-2026.devpost.com/', '_blank')}
                 >
                   Register Now
                 </Button>
