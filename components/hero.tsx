@@ -12,16 +12,20 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Left Content (3 columns) */}
           <div className="lg:col-span-3">
-            <div className="flex flex-col items-center lg:items-start">
+            <div className="flex flex-col items-center lg:items-start mt-2 lg:mt-4">
               {/* Institutional Header */}
               <div className="mb-4 text-center lg:text-left w-full">
-                <h2 className="text-2xl md:text-3xl font-semibold text-[#00BFA5] mb-2">
-                  TIET-UQ Center of Excellence in Data Science & AI
-                </h2>
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                  Thapar Institute of Engineering and Technology, Patiala
-                </h3>
-                <p className="text-lg font-semibold mb-2">
+                <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 mb-4">
+                  <div>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-[#00BFA5] mb-2">
+                      TIET-UQ Center of Excellence in Data Science & AI
+                    </h2>
+                    <h3 className="text-2xl md:text-3xl font-semibold mb-2">
+                      Thapar Institute of Engineering and Technology, Patiala
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-xl font-semibold mb-2">
                   Presents
                 </p>
               </div>
@@ -34,7 +38,7 @@ export function Hero() {
 
               {/* Description */}
               <p className="mt-2 text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl text-center lg:text-left">
-                Inclusion, Empowerment, and Equality
+                Official Pre-Summit Event of the AI Impact Summit 2026
               </p>
               
               <p className="mt-4 text-lg text-muted-foreground font-medium max-w-2xl text-center lg:text-left">
@@ -71,6 +75,18 @@ export function Hero() {
 
           {/* Right Content (1 column) - Image and Event Highlights */}
           <div className="lg:col-span-1">
+            {/* AI Mission Logo */}
+            <div className="mb-8 -mt-4 lg:-mt-6 flex justify-center lg:justify-end">
+              <img
+                src="/Ai mission logo.PNG"
+                alt="AI Mission Logo"
+                className="h-30 md:h-38 lg:h-42 w-auto object-contain"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            </div>
+
             {/* Collaboration Logo */}
             {/* <div className="mb-8 flex justify-center">
               <div className="inline-block rounded-xl border-2 border-[#00BFA5]/20 bg-white/50 backdrop-blur-sm p-4 shadow-lg">
@@ -86,7 +102,7 @@ export function Hero() {
             </div> */}
 
             {/* Event Highlights */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg mt-6 lg:mt-8">
+            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg mt-0 lg:mt-2">
               <h3 className="text-xl font-semibold mb-6">Event Highlights</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
