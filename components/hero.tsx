@@ -37,20 +37,20 @@ export function Hero() {
               </h1>
 
               {/* Description */}
-              <p className="mt-2 text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl text-center lg:text-left">
+              <p className="mt-2 text-xl md:text-2xl text-muted-foreground font-bold max-w-2xl text-center lg:text-left">
                 Official Pre-Summit Event of the AI Impact Summit 2026
               </p>
               
-              <p className="mt-4 text-lg text-muted-foreground font-medium max-w-2xl text-center lg:text-left">
+              <p className="mt-4 text-xl text-muted-foreground font-medium max-w-2xl text-center lg:text-justify">
                 The Innovation Challenge is aligned with the IndiaAI Summit, reflecting the core theme of "Inclusion." This challenge envisions a futuristic path for Inclusive and Culturally Grounded AI, fostering solutions that are innovative, accessible, and impactful.
               </p>
 
-              <p className="mt-4 text-lg text-muted-foreground font-medium max-w-2xl text-center lg:text-left">
-                The "Inclusion" Innovation Challenge embodies the spirit of the IndiaAI Sutras — <span className="italic">Empowering People, Accelerating Progress, and Securing the Planet's Future through Responsible and Transformative AI.</span>
+              <p className="mt-4 text-xl text-muted-foreground font-medium max-w-2xl text-center lg:text-justify">
+                The "Inclusion" Innovation Challenge embodies the spirit of the IndiaAI Sutras — <span className="italic">Empowering People, Accelerating Progress, and Securing the Planet's Future through Responsible and Transformative AI.</span> Join us in creating AI solutions that bridge gaps and empower communities across all regions.
               </p>
 
               {/* Action Buttons */}
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <div className="mt-6 flex flex-col sm:flex-row gap-4">
                 <Button
                   className="bg-[#00BFA5] hover:bg-[#00A895] text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-200"
                   onClick={() => window.open('https://forms.gle/ZWeHuWhNrvVq2MGM6', '_blank')}
@@ -76,7 +76,7 @@ export function Hero() {
           {/* Right Content (1 column) - Image and Event Highlights */}
           <div className="lg:col-span-1">
             {/* AI Mission Logo */}
-            <div className="mb-8 -mt-4 lg:-mt-6 flex justify-center lg:justify-end">
+            <div className="mb-8 -mt-2 lg:-mt-4 flex justify-center lg:justify-end">
               <img
                 src="/Ai mission logo.PNG"
                 alt="AI Mission Logo"
