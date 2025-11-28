@@ -11,9 +11,9 @@ import {
 
 const faqs = [
   {
-    question: "Can I change my team after submitting the Google Form?",
+    question: "Can I change my team after registering on Devpost?",
     answer:
-      "No, teams cannot be reformed or changed once the Google Form has been submitted. Please ensure your team composition is final before submitting the registration form.",
+      "No, teams cannot be reformed or changed once your Devpost registration has been submitted. Please ensure your team composition is final before submitting the registration on Devpost.",
   },
   {
     question: "Can one student participate in multiple teams?",
@@ -108,7 +108,7 @@ export function ContactSection() {
               <ul className="space-y-2 text-sm text-blue-700">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">•</span>
-                  <span><strong>No team changes:</strong> Teams cannot be reformed or changed once the Google Form is submitted</span>
+                  <span><strong>No team changes:</strong> Teams cannot be reformed or changed once your Devpost registration is submitted</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">•</span>
