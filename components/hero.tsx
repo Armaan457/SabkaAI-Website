@@ -1,13 +1,24 @@
 "use client";
 
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { CircuitBackground } from "./circuit-background";
 
 export function Hero() {
+  useEffect(() => {
+    // Ensure page starts at top on initial load/reload (not when navigating to #home)
+    if (window.location.hash === "" || window.location.hash === "#home") {
+      // Use requestAnimationFrame to ensure DOM is ready
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      });
+    }
+  }, []);
+
   return (
-    <section id="home" className="relative isolate bg-background py-0">
+    <section id="home" className="relative isolate bg-background py-0 scroll-mt-16 md:scroll-mt-20">
       <CircuitBackground />
-      <div className="container mx-auto px-4 pt-2 md:pt-6">
+      <div className="container mx-auto px-4 pt-4 md:pt-6">
         {/* AI Mission Logo - Top on mobile, right on desktop */}
         <div className="mb-2 lg:hidden flex justify-center">
           <img
