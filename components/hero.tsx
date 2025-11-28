@@ -8,6 +8,18 @@ export function Hero() {
     <section id="home" className="relative isolate bg-background py-0">
       <CircuitBackground />
       <div className="container mx-auto px-4 pt-2 md:pt-6">
+        {/* AI Mission Logo - Top on mobile, right on desktop */}
+        <div className="mb-2 lg:hidden flex justify-center">
+          <img
+            src="/Ai mission logo.PNG"
+            alt="AI Mission Logo"
+            className="h-34 md:h-40 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+        </div>
+
         {/* Main Content Area */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Left Content (3 columns) */}
@@ -37,7 +49,7 @@ export function Hero() {
               </h1>
 
               {/* Description */}
-              <p className="mt-2 text-xl md:text-2xl text-muted-foreground font-bold max-w-2xl text-center lg:text-left">
+              <p className="mt-2 text-xl md:text-2xl text-[#FFA726] font-bold max-w-2xl text-center lg:text-left">
                 Official Pre-Summit Event of the AI Impact Summit 2026
               </p>
               
@@ -75,12 +87,12 @@ export function Hero() {
 
           {/* Right Content (1 column) - Image and Event Highlights */}
           <div className="lg:col-span-1">
-            {/* AI Mission Logo */}
-            <div className="mb-8 -mt-2 lg:-mt-4 flex justify-center lg:justify-end">
+            {/* AI Mission Logo - Desktop only */}
+            <div className="hidden lg:block mb-8 -mt-4 flex justify-end">
               <img
                 src="/Ai mission logo.PNG"
                 alt="AI Mission Logo"
-                className="h-30 md:h-38 lg:h-42 w-auto object-contain"
+                className="h-42 w-auto object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
                 }}
