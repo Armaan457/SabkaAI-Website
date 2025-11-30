@@ -18,7 +18,7 @@ const INDIA_EVENTS = [
   {
     title: "PPT Submission Deadline",
     icon: Presentation,
-    date: "30 November 2025",
+    date: "2nd December 2025",
     description: "Teams must submit their initial presentation and approach",
   },
   {
