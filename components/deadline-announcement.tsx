@@ -46,7 +46,7 @@ export function DeadlineAnnouncement() {
           </div>
           <DialogDescription className="text-base pt-2">
             We're excited to announce that the registration deadline has been extended to{" "}
-            <span className="font-semibold text-foreground">5th December</span>.
+            <span className="font-semibold text-foreground">05 December, 2025</span>.
             <br />
             <br />
             Don't miss this opportunity to participate in the AI for Inclusion Hackathon!
