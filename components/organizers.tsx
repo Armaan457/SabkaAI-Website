@@ -59,7 +59,7 @@ const organizers: Organizer[] = [
     id: "7",
     name: "Dr. Amrita Kaur",
     role: "",
-    image: "/harpreet_mam (1).jpg",
+    image: "/harpreet_mam.jpg",
     institution: "Assistant Professor, TIET"
   },
   {
