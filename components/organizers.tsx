@@ -1,8 +1,7 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Building2 } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 interface Organizer {
   id: string;
@@ -10,6 +9,7 @@ interface Organizer {
   role: string;
   image: string;
   institution: string;
+  linkedin?: string;
 }
 
 const organizers: Organizer[] = [
@@ -77,7 +77,16 @@ const speakers: Organizer[] = [
     name: "Rahul Bhargava",
     role: "",
     image: "/speaker1.png",
-    institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com."
+    institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com.",
+    linkedin: "https://www.linkedin.com/in/rahuldotbhargava/"
+  },
+  {
+    id: "s2",
+    name: "Saket Kumar",
+    role: "",
+    image: "/speaker2.png",
+    institution: "Security Software Engineer at Microsoft, working on Agentic AI, Generative AI, and Cloud Security",
+    linkedin: "https://www.linkedin.com/in/saketkumar05/"
   },
 ];
 
@@ -162,6 +171,19 @@ export function Organizers() {
                   {speaker.role}
                 </p>
                 <p className="text-sm text-gray-700 mt-1 text-center">{speaker.institution}</p>
+                {speaker.linkedin && (
+                  <div className="mt-3 flex justify-center">
+                    <a
+                      href={speaker.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-md bg-blue-50 p-2 hover:bg-blue-100"
+                      aria-label={`Open ${speaker.name} on LinkedIn`}
+                    >
+                      <Linkedin className="h-5 w-5 text-blue-600" />
+                    </a>
+                  </div>
+                )}
               </div>
             </Card>
           </div>
