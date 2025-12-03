@@ -71,6 +71,16 @@ const organizers: Organizer[] = [
   },
 ];
 
+const speakers: Organizer[] = [
+  {
+    id: "s1",
+    name: "Rahul Bhargava",
+    role: "",
+    image: "/speaker1.png",
+    institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com."
+  },
+];
+
 export function Organizers() {
   return (
     <div className="space-y-8">
@@ -109,10 +119,49 @@ export function Organizers() {
                 <p className="text-xs text-blue-600/80 font-medium transition-all duration-500 group-hover:text-blue-700">
                   {organizer.role}
                 </p>
-                <div className="flex items-center justify-center gap-1 text-xs text-gray-600 pt-0.5">
-                  <Building2 className="h-3 w-3" />
-                  <span className="line-clamp-2 text-center">{organizer.institution}</span>
-                </div>
+                <p className="text-sm text-gray-700 mt-1 text-center">{organizer.institution}</p>
+              </div>
+            </Card>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center pt-6">
+        <h3 className="text-2xl font-bold mb-4">Meet Our Speakers</h3>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Hear from industry leaders and researchers who will be sharing
+          insights, techniques, and real-world applications during the event.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {speakers.map((speaker) => (
+          <div
+            key={speaker.id}
+            className="group relative transform transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 blur transition duration-500 group-hover:opacity-30"></div>
+            <Card className="relative p-3 pt-4 text-center bg-white/50 backdrop-blur-sm transition-all duration-300 hover:shadow-xl min-h-[280px] border-blue-200/50">
+              <div className="mb-2 transform transition-all duration-500 group-hover:scale-105">
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="w-32 h-32 rounded-full mx-auto object-cover border-2 border-blue-200/50 shadow-md transition-all duration-500 group-hover:border-blue-300 group-hover:shadow-blue-200/50"
+                  onError={(e) => {
+                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                      speaker.name
+                    )}&background=3b82f6&color=ffffff&size=64`;
+                  }}
+                />
+              </div>
+              <div className="space-y-0.5">
+                <h4 className="font-semibold text-md leading-tight transition-all duration-500 group-hover:text-blue-600">
+                  {speaker.name}
+                </h4>
+                <p className="text-xs text-blue-600/80 font-medium transition-all duration-500 group-hover:text-blue-700">
+                  {speaker.role}
+                </p>
+                <p className="text-sm text-gray-700 mt-1 text-center">{speaker.institution}</p>
               </div>
             </Card>
           </div>
