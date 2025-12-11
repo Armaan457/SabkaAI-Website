@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-
 import { Menu } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const LINKS = [
   { href: "#problems", label: "Problem Statements" },
@@ -42,14 +43,22 @@ export function NavBar() {
     <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="#home" className="flex items-center gap-2 font-semibold">
-          <span className="h-6 w-6 rounded-sm bg-gradient-to-r from-blue-500 to-cyan-500" aria-hidden />
+          <Image
+            src="/codsai.png"
+            alt="AI for Inclusion Logo"
+            width={32}
+            height={32}
+            className="h-10 w-10 object-contain"
+          />
           <span>AI for Inclusion</span>
         </Link>
         <div className="hidden md:flex items-center gap-6">
           {LINKS.map((l) => (
             <a
               key={l.href}
-              ref={(el) => (linkRefs.current[l.href] = el)}
+              ref={(el) => {
+                linkRefs.current[l.href] = el;
+              }}
               href={l.href}
               className="relative text-sm hover:text-primary transition-colors"
             >

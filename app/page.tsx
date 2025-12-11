@@ -23,7 +23,7 @@ export default function Page() {
       <section
         id="about"
         aria-labelledby="about-title"
-        className="py-16 md:py-24"
+        className="py-12 md:py-16"
       >
         <div className="container mx-auto px-4">
           <About />
@@ -33,57 +33,39 @@ export default function Page() {
       <section
         id="problems"
         aria-labelledby="problems-title"
-        className="pt-6 pb-16 md:pb-24 bg-secondary/10"
+        className="py-12 md:py-16 bg-secondary/10"
       >
-        <div className="container mx-auto px-4 ">
-          <h2
-            id="problems-title"
-            className="text-3xl md:text-4xl font-semibold text-pretty my-8"
-          >
-            Problem Statements
-          </h2>
+        <div className="container mx-auto px-4">
           <ProblemStatements />
         </div>
       </section>
       <section
         id="timeline"
         aria-labelledby="timeline-title"
-        className="py-16 md:py-24"
+        className="py-12 md:py-16"
       >
         <div className="container mx-auto px-4">
-          <h2
-            id="timeline-title"
-            className="text-3xl md:text-4xl font-semibold text-pretty mb-8"
-          >
-            Timeline
-          </h2>
           <Timeline />
         </div>
       </section>
       <section
         id="prizes"
         aria-labelledby="prizes-title"
-        className="py-16 md:py-24 bg-secondary/10"
+        className="py-12 md:py-16 bg-secondary/10"
       >
         <div className="container mx-auto px-4">
-          <h2
-            id="prizes-title"
-            className="text-3xl md:text-4xl font-semibold text-pretty mb-8 text-center"
-          >
-            Prizes & Recognition
-          </h2>
           <Prizes />
         </div>
       </section>
       <section
         id="registration"
         aria-labelledby="registration-title"
-        className="py-16 md:py-24"
+        className="py-12 md:py-16"
       >
         <div className="container mx-auto px-4">
           <h2
             id="registration-title"
-            className="text-3xl md:text-4xl font-semibold text-pretty mb-8 text-center"
+            className="text-3xl md:text-4xl font-semibold text-pretty mb-6 text-center"
           >
             Registration
           </h2>
@@ -93,12 +75,12 @@ export default function Page() {
       <section
         id="guidelines"
         aria-labelledby="guidelines-title"
-        className="pt-16 pb-10 md:py-24"
+        className="py-12 md:py-16 bg-secondary/10"
       >
         <div className="container mx-auto px-4">
           <h2
             id="guidelines-title"
-            className="text-3xl md:text-4xl font-semibold text-pretty mb-7"
+            className="text-3xl md:text-4xl font-semibold text-pretty mb-6"
           >
             Guidelines
           </h2>
@@ -108,7 +90,7 @@ export default function Page() {
       <section
         id="organizers"
         aria-labelledby="organizers-title"
-        className="py-16 md:py-24"
+        className="py-12 md:py-16"
       >
         <div className="container mx-auto px-4">
           <Organizers />
