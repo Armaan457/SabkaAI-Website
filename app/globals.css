@@ -205,7 +205,7 @@ html {
 
 /* Ensure orange (brand) buttons have white text */
 .bg-brand,
-.bg-[#ff6a1a],
+.bg-brand-orange,
 .bg-orange-500,
 .bg-[--brand-primary] {
   color: #fff !important;
@@ -214,4 +214,8 @@ html {
 /* If you use Tailwind's .text-primary-foreground for button text: */
 .text-primary-foreground {
   color: #fff !important;
+}
+
+.bg-brand-orange {
+  background-color: #ff6a1a !important;
 }
