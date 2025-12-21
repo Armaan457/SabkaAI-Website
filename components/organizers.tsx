@@ -114,39 +114,39 @@ const studentCoordinators: Organizer[] = [
     role: "Overall Event Coordinator",
     image: "/harsimran.png",
     institution: "Thapar Institute of Engineering & Technology",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/harsimran-singh-dalal-614a39286/"
   },
   {
     id: "sc3",
     name: "Lakshya Manchanda",
     role: "Overall Event Coordinator",
-    image: "/placeholder-avatar.jpg",
+    image: "/lakshya.png",
     institution: "Thapar Institute of Engineering & Technology",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/lakshyamanchanda/"
   },
   {
     id: "sc4",
     name: "Nakul Sharma",
     role: "Overall Event Coordinator",
-    image: "/placeholder-avatar.jpg",
+    image: "/nakul.png",
     institution: "Thapar Institute of Engineering & Technology",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/nakulsharma20/"
   },
   {
     id: "sc5",
     name: "Nityam",
     role: "Overall Event Coordinator",
-    image: "/placeholder-avatar.jpg",
+    image: "/nityam.png",
     institution: "Thapar Institute of Engineering & Technology",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/nityamt19/"
   },
   {
     id: "sc6",
     name: "Tamanna Bhardwaj",
     role: "Overall Event Coordinator",
-    image: "/placeholder-avatar.jpg",
+    image: "/tamanna.png",
     institution: "Thapar Institute of Engineering & Technology",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/tamanna-bhardwaj-96429b230/"
   }
 ];
 
@@ -384,7 +384,6 @@ export function Organizers() {
         </motion.div>
       </motion.div>
 
-      {/* Student Coordinators Section
       <motion.div
         className="space-y-6"
         initial="hidden"
@@ -414,7 +413,7 @@ export function Organizers() {
             <PersonCard key={coordinator.id} person={coordinator} isSpeaker={false} />
           ))}
         </motion.div>
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 }

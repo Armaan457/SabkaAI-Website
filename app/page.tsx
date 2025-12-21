@@ -8,7 +8,6 @@ import { Timeline } from "@/components/timeline";
 import { RegistrationForm } from "@/components/registration-form";
 import { Prizes } from "@/components/prizes";
 import { Organizers } from "@/components/organizers";
-import { Judges } from "@/components/judges";
 import { ContactSection } from "@/components/contact-section";
 import { ViewGuidelines } from "@/components/view-guidelines";
 import { EventHighlights } from "@/components/EventHighLights";

@@ -12,7 +12,7 @@ const LINKS = [
   { href: "#timeline", label: "Timeline" },
   { href: "#prizes", label: "Prizes" },
   { href: "#registration", label: "Registration" },
-  { href: "#organizers", label: "Organizers" },
+  { href: "#organizers", label: "Organizers and Judges" },
   // { href: "#judges", label: "Judges" },
   { href: "#contact", label: "Contact & FAQ" },
 ];
