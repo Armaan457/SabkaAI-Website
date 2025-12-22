@@ -250,7 +250,7 @@ function PersonCard({ person, isSpeaker = false }: { person: Organizer; isSpeake
         {/* Card */}
         <Card className={`relative h-full p-5 text-center backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 ${cardBg}`}>
           {/* Image container */}
-          <motion.div className="mb-3 flex justify-center" variants={imageVariants}>
+          <motion.div className="mb-0.5 flex justify-center" variants={imageVariants}>
             <div className="relative">
               <div className={`absolute -inset-1 rounded-full blur-sm opacity-60 ${imageBg}`} />
               <img
