@@ -105,7 +105,7 @@ const studentCoordinators: Organizer[] = [
     name: "Armaan Jagirdar",
     role: "Overall Event Coordinator",
     image: "/armaan.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/armaan-jagirdar-183b47285/"
   },
   {
@@ -113,7 +113,7 @@ const studentCoordinators: Organizer[] = [
     name: "Harsimran Singh",
     role: "Overall Event Coordinator",
     image: "/harsimran.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/harsimran-singh-dalal-614a39286/"
   },
   {
@@ -121,7 +121,7 @@ const studentCoordinators: Organizer[] = [
     name: "Lakshya Manchanda",
     role: "Overall Event Coordinator",
     image: "/lakshya.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/lakshyamanchanda/"
   },
   {
@@ -129,7 +129,7 @@ const studentCoordinators: Organizer[] = [
     name: "Nakul Sharma",
     role: "Overall Event Coordinator",
     image: "/nakul.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/nakulsharma20/"
   },
   {
@@ -137,7 +137,7 @@ const studentCoordinators: Organizer[] = [
     name: "Nityam",
     role: "Overall Event Coordinator",
     image: "/nityam.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/nityamt19/"
   },
   {
@@ -145,7 +145,7 @@ const studentCoordinators: Organizer[] = [
     name: "Tamanna Bhardwaj",
     role: "Overall Event Coordinator",
     image: "/tamanna.png",
-    institution: "Thapar Institute of Engineering & Technology",
+    institution: "",
     linkedin: "https://www.linkedin.com/in/tamanna-bhardwaj-96429b230/"
   }
 ];
