@@ -11,12 +11,10 @@ import { Organizers } from "@/components/organizers";
 import { ContactSection } from "@/components/contact-section";
 import { ViewGuidelines } from "@/components/view-guidelines";
 import { EventHighlights } from "@/components/EventHighLights";
-import { DeadlineAnnouncement } from "@/components/deadline-announcement";
 
 export default function Page() {
   return (
     <main className="min-h-[100dvh]">
-      <DeadlineAnnouncement />
       <NavBar />
       <Hero />
       <section
