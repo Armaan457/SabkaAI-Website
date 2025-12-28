@@ -217,7 +217,7 @@ export function Timeline() {
                 {currentEvents.map((event, index) => {
                   const IconComponent = event.icon;
                   const isCompleted = false;
-                  const isCurrent = index === 1;
+                  const isCurrent = index === 2;
 
                   return (
                     <motion.div

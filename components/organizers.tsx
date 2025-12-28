@@ -208,6 +208,7 @@ const glowVariants = {
 function PersonCard({ person, isSpeaker = false }: { person: Organizer; isSpeaker?: boolean }) {
   const isStudentCoordinator = person.id.startsWith('sc');
   const showLinkedIn = person.linkedin;
+  const hasInstitution = !!person.institution && person.institution.trim().length > 0;
 
   // Color logic
   let glowBg, cardBg, imageBg, nameHover, roleText;
@@ -286,14 +287,16 @@ function PersonCard({ person, isSpeaker = false }: { person: Organizer; isSpeake
               </motion.p>
             )}
 
-            <p className="text-sm text-gray-600 flex-grow whitespace-normal break-words leading-relaxed mt-1">
-              {person.institution}
-            </p>
+            {hasInstitution && (
+              <p className={`text-sm text-gray-600 whitespace-normal break-words leading-relaxed mt-1 ${!isStudentCoordinator ? 'flex-grow' : ''}`}>
+                {person.institution}
+              </p>
+            )}
 
             {/* LinkedIn Button for organizers and speakers */}
             {showLinkedIn && (
               <motion.div
-                className="pt-2 flex justify-center mt-auto"
+                className={`pt-2 flex justify-center ${(!isStudentCoordinator && hasInstitution) ? 'mt-auto' : ''}`}
                 initial={{ opacity: 0.7, scale: 0.9 }}
                 whileHover={{ opacity: 1, scale: 1.05 }}
               >
