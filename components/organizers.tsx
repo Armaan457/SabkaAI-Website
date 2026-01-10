@@ -97,6 +97,22 @@ const judges: Organizer[] = [
     institution: "Security Software Engineer at Microsoft, working on Agentic AI, Generative AI, and Cloud Security",
     linkedin: "https://www.linkedin.com/in/saketkumar05/"
   },
+  {
+    id: "j3",
+    name: "Vinay Pratap Singh",
+    role: "",
+    image: "/speaker3.png",
+    institution: "Senior Consultant at Microsoft. Technical Lead with over 12+ years of experience.",
+    linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
+  },
+  {
+    id: "j4",
+    name: "Dr Chandrasekhar Buddha",
+    role: "",
+    image: "/speaker4.png",
+    institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE.",
+    linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
+  }
 ];
 
 const studentCoordinators: Organizer[] = [
@@ -147,6 +163,22 @@ const studentCoordinators: Organizer[] = [
     image: "/tamanna.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/tamanna-bhardwaj-96429b230/"
+  },
+  {
+    id: "sc7",
+    name: "Ikansh Mahajan",
+    role: "Overall Event Coordinator",
+    image: "/ikansh.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/ikabrain/"
+  },
+  {
+    id: "sc8",
+    name: "Sparsh Aggarwal",
+    role: "Overall Event Coordinator",
+    image: "/sparsh.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/sparshagarwal080/"
   }
 ];
 
@@ -346,11 +378,13 @@ export function Organizers() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-6"
+          className="flex flex-wrap justify-center gap-5 sm:gap-6"
           variants={containerVariants}
         >
           {organizers.map((organizer) => (
-            <PersonCard key={organizer.id} person={organizer} isSpeaker={false} />
+            <div key={organizer.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+              <PersonCard person={organizer} isSpeaker={false} />
+            </div>
           ))}
         </motion.div>
       </motion.div>
@@ -366,23 +400,25 @@ export function Organizers() {
         <motion.div className="text-center space-y-2" variants={itemVariants}>
           <motion.div className="flex justify-center mb-1">
             <div className="inline-block px-4 py-1 bg-gradient-to-r from-teal-100 to-teal-200 rounded-full">
-              <p className="text-sm font-semibold text-teal-700">Event Judges</p>
+              <p className="text-sm font-semibold text-teal-700">Experts Panel</p>
             </div>
           </motion.div>
           <h3 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-teal-400">
-            Meet Our Judges
+            Meet Our Judges and Panelists
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto text-base">
-            Experienced professionals and industry experts who will evaluate and judge the projects at the hackathon.
+            Experienced professionals and industry experts who will evaluate and judge the projects at the hackathon as well as lead insightful panel discussions.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-6"
+          className="flex flex-wrap justify-center gap-5 sm:gap-6"
           variants={containerVariants}
         >
           {judges.map((judge) => (
-            <PersonCard key={judge.id} person={judge} isSpeaker={true} />
+            <div key={judge.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+              <PersonCard person={judge} isSpeaker={true} />
+            </div>
           ))}
         </motion.div>
       </motion.div>
@@ -409,11 +445,13 @@ export function Organizers() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-6"
+          className="flex flex-wrap justify-center gap-5 sm:gap-6"
           variants={containerVariants}
         >
           {studentCoordinators.map((coordinator) => (
-            <PersonCard key={coordinator.id} person={coordinator} isSpeaker={false} />
+            <div key={coordinator.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+              <PersonCard person={coordinator} isSpeaker={false} />
+            </div>
           ))}
         </motion.div>
       </motion.div>
