@@ -17,18 +17,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const INDIA_EVENTS = [
   {
-    title: "PPT Submission Deadline",
-    icon: Presentation,
-    date: "05 December 2025",
-    description: "Teams must submit their initial presentation and approach",
-  },
-  {
-    title: "Shortlisting Phase I",
-    icon: Users,
-    date: "08 December 2025",
-    description: "First round of team selection based on submissions",
-  },
-  {
     title: "Online Pitching",
     icon: Presentation,
     date: "28 December 2025",
@@ -38,13 +26,13 @@ const INDIA_EVENTS = [
     title: "Results Announcement",
     icon: Trophy,
     date: "07 January 2026",
-    description: "Winners will be announced for both tracks",
+    description: "Shortlisted teams will be announced for all tracks",
   },
   {
-    title: "AI Hands-On Workshop",
+    title: "AIxclerate",
     icon: Users,
     date: "17 January 2026",
-    description: "Practical AI workshop for all participants",
+    description: "Panel discussion with AI experts",
   },
   {
     title: "Innovation Challenge",
@@ -56,18 +44,6 @@ const INDIA_EVENTS = [
 
 const UQ_EVENTS = [
   {
-    title: "PPT Submission Deadline",
-    icon: Presentation,
-    date: "05 December 2025",
-    description: "Teams must submit their initial presentation and approach",
-  },
-  {
-    title: "Shortlisting Phase I",
-    icon: Users,
-    date: "10 December 2025",
-    description: "First round of team selection based on submissions",
-  },
-  {
     title: "Online Pitching",
     icon: Presentation,
     date: "04 January 2026",
@@ -77,13 +53,13 @@ const UQ_EVENTS = [
     title: "Results Announcement",
     icon: Trophy,
     date: "07 January 2026",
-    description: "Winners will be announced for both tracks",
+    description: "Shortlisted teams will be announced for all tracks",
   },
   {
-    title: "AI Hands-On Workshop",
+    title: "AIxclerate",
     icon: Users,
     date: "17 January 2026",
-    description: "Practical AI workshop for all participants",
+    description: "Panel discussion with AI experts",
   },
   {
     title: "Innovation Challenge",
@@ -217,7 +193,7 @@ export function Timeline() {
                 {currentEvents.map((event, index) => {
                   const IconComponent = event.icon;
                   const isCompleted = false;
-                  const isCurrent = index === 2;
+                  const isCurrent = index === 1;
 
                   return (
                     <motion.div

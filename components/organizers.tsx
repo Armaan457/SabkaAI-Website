@@ -51,7 +51,7 @@ const organizers: Organizer[] = [
     name: "Dr. Sachin Kansal",
     role: "Research and Innovation Coordinator",
     image: "/sachin_sir.jpg",
-    institution: "Assistant Professor, TIET",
+    institution: "Associate Professor, TIET",
     linkedin: ""
   },
   {
@@ -82,6 +82,14 @@ const organizers: Organizer[] = [
 
 const judges: Organizer[] = [
   {
+    id: "j4",
+    name: "Dr Chandrasekhar Buddha",
+    role: "",
+    image: "/speaker4.png",
+    institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE.",
+    linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
+  },
+  {
     id: "j1",
     name: "Rahul Bhargava",
     role: "",
@@ -104,14 +112,6 @@ const judges: Organizer[] = [
     image: "/speaker3.png",
     institution: "Senior Consultant at Microsoft. Technical Lead with over 12+ years of experience.",
     linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
-  },
-  {
-    id: "j4",
-    name: "Dr Chandrasekhar Buddha",
-    role: "",
-    image: "/speaker4.png",
-    institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE.",
-    linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
   }
 ];
 
@@ -283,7 +283,7 @@ function PersonCard({ person, isSpeaker = false }: { person: Organizer; isSpeake
         {/* Card */}
         <Card className={`relative h-full p-5 text-center backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 ${cardBg}`}>
           {/* Image container */}
-          <motion.div className="mb-0.5 flex justify-center" variants={imageVariants}>
+          <motion.div className="mb-0 flex justify-center" variants={imageVariants}>
             <div className="relative">
               <div className={`absolute -inset-1 rounded-full blur-sm opacity-60 ${imageBg}`} />
               <img
