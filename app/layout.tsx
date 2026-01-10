@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "AI for Inclusion Hackathon",
   description:
     "AI for Inclusion Hackathon 2026 | By TIET–UQ Centre of Excellence in Data Science & AI",
+  icons: {
+    icon: "/codsai.png",
+  },
 };
 
 export default function RootLayout({
