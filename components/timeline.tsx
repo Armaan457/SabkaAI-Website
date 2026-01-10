@@ -29,10 +29,16 @@ const INDIA_EVENTS = [
     description: "Shortlisted teams will be announced for all tracks",
   },
   {
+    title: "AI Horizons: Innovation & Integrity",
+    icon: Users,
+    date: "16 January 2026",
+    description: "Workshops conducted by leading AI professionals",
+  },
+  {
     title: "AI-xclerate",
     icon: Users,
     date: "17 January 2026",
-    description: "Panel discussion with AI experts",
+    description: "Panel discussion with AI experts on multiple domains",
   },
   {
     title: "Innovation Challenge",
@@ -54,6 +60,12 @@ const UQ_EVENTS = [
     icon: Trophy,
     date: "07 January 2026",
     description: "Shortlisted teams will be announced for all tracks",
+  },
+  {
+    title: "AI Horizons: Innovation & Integrity",
+    icon: Users,
+    date: "16 January 2026",
+    description: "Workshops conducted by leading AI professionals",
   },
   {
     title: "AI-xclerate",

@@ -113,13 +113,29 @@ const judges: Organizer[] = [
     institution: "Senior Consultant at Microsoft. Technical Lead with over 12+ years of experience.",
     linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
   },
-    {
+  {
     id: "j5",
     name: "Prerna Mukharya",
     role: "",
     image: "/speaker5.png",
     institution: "Founder of Outline India. Research background from Harvard, MIT, and the Centre for Policy Research.",
     linkedin: "https://www.linkedin.com/in/prernamukharya/"
+  },
+  {
+    id: "j6",
+    name: "Richa Marwah",
+    role: "",
+    image: "/speaker6.png",
+    institution: "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India.",
+    linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/"
+  },
+  {
+    id: "j7",
+    name: "Vinamra Harkar",
+    role: "",
+    image: "/speaker7.png",
+    institution: "Researcher at NUS GeoSpatialX Lab. Graduate from NSUT with expertise in GeoAI and Computer Vision.",
+    linkedin: "https://www.linkedin.com/in/vinamraharkar/"
   }
 ];
 
@@ -412,10 +428,10 @@ export function Organizers() {
             </div>
           </motion.div>
           <h3 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-teal-400">
-            Meet Our Judges and Panelists
+            Meet Our Judges and Speakers
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto text-base">
-            Experienced professionals and industry experts who will evaluate and judge the projects at the hackathon as well as lead insightful panel discussions.
+            Experienced professionals and industry experts who will evaluate and judge the projects at the hackathon as well as lead insightful sessions.
           </p>
         </motion.div>
 
