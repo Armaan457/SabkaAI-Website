@@ -112,6 +112,14 @@ const judges: Organizer[] = [
     image: "/speaker3.png",
     institution: "Senior Consultant at Microsoft. Technical Lead with over 12+ years of experience.",
     linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
+  },
+    {
+    id: "j5",
+    name: "Prerna Mukharya",
+    role: "",
+    image: "/speaker5.png",
+    institution: "Founder of Outline India. Research background from Harvard, MIT, and the Centre for Policy Research.",
+    linkedin: "https://www.linkedin.com/in/prernamukharya/"
   }
 ];
 
