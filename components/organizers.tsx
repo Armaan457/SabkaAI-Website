@@ -102,7 +102,7 @@ const judges: Organizer[] = [
     name: "Saket Kumar",
     role: "",
     image: "/speaker2.png",
-    institution: "Security Software Engineer at Microsoft, working on Agentic AI, Generative AI, and Cloud Security",
+    institution: "Security Software Engineer at Microsoft with 15+ years of experience, working on Agentic AI and Generative AI",
     linkedin: "https://www.linkedin.com/in/saketkumar05/"
   },
   {
@@ -110,7 +110,7 @@ const judges: Organizer[] = [
     name: "Vinay Pratap Singh",
     role: "",
     image: "/speaker3.png",
-    institution: "Senior Consultant at Microsoft. Technical Lead with over 12+ years of experience.",
+    institution: "Senior Consultant at Microsoft. Technical Lead with over 14+ years of experience.",
     linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
   },
   {
