@@ -80,66 +80,15 @@ const organizers: Organizer[] = [
   },
 ];
 
-const judges: Organizer[] = [
-  {
-    id: "j4",
-    name: "Dr Chandrasekhar Buddha",
-    role: "",
-    image: "/speaker4.png",
-    institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE.",
-    linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
-  },
-  {
-    id: "j1",
-    name: "Rahul Bhargava",
-    role: "",
-    image: "/speaker1.png",
-    institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com.",
-    linkedin: "https://www.linkedin.com/in/rahuldotbhargava/"
-  },
-  {
-    id: "j2",
-    name: "Saket Kumar",
-    role: "",
-    image: "/speaker2.png",
-    institution: "Security Software Engineer at Microsoft with 15+ years of experience, working on Agentic AI and Generative AI",
-    linkedin: "https://www.linkedin.com/in/saketkumar05/"
-  },
-  {
-    id: "j3",
-    name: "Vinay Pratap Singh",
-    role: "",
-    image: "/speaker3.png",
-    institution: "Senior Consultant at Microsoft. Technical Lead with over 14+ years of experience.",
-    linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
-  },
-  {
-    id: "j5",
-    name: "Prerna Mukharya",
-    role: "",
-    image: "/speaker5.png",
-    institution: "Founder of Outline India. Research background from Harvard, MIT, and the Centre for Policy Research.",
-    linkedin: "https://www.linkedin.com/in/prernamukharya/"
-  },
-  {
-    id: "j6",
-    name: "Richa Marwah",
-    role: "",
-    image: "/speaker6.png",
-    institution: "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India.",
-    linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/"
-  },
-  {
-    id: "j7",
-    name: "Vinamra Harkar",
-    role: "",
-    image: "/speaker7.png",
-    institution: "Researcher at NUS GeoSpatialX Lab. Graduate from NSUT with expertise in GeoAI and Computer Vision.",
-    linkedin: "https://www.linkedin.com/in/vinamraharkar/"
-  }
-];
-
 const studentCoordinators: Organizer[] = [
+  {
+    id: "sc9",
+    name: "Ishpuneet Singh",
+    role: "Expert Mentor",
+    image: "/ips.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/ips610/"
+  },
   {
     id: "sc1",
     name: "Armaan Jagirdar",
