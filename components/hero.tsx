@@ -166,8 +166,8 @@ export function Hero() {
                 <div className="flex items-center gap-4">
                   <div className="text-[#00BFA5]">🔄</div>
                   <div>
-                    <div className="font-semibold">Hybrid Event</div>
-                    <div className="text-sm text-muted-foreground">Both Offline & Online Mode</div>
+                    <div className="font-semibold">Onsite Event</div>
+                    <div className="text-sm text-muted-foreground"> Offline Mode</div>
                   </div>
                 </div>
               </div>

@@ -94,7 +94,7 @@ export function ContactSection() {
                     Thapar Institute of Engineering and Technology, Patiala
                   </div>
                   <div className="text-xs text-blue-600 mt-1">
-                    Hybrid Event (Online + Onsite)
+                    Onsite Event (Offline Mode)
                   </div>
                 </div>
               </div>

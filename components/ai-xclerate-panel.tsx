@@ -248,14 +248,14 @@ export function AiScleratePanel() {
               className="space-y-4"
               variants={itemVariants}
             >
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-stretch">
                 {/* Panel Meta */}
-                <div className="rounded-xl p-6 bg-white/92 border border-teal-100 shadow-md backdrop-blur-sm space-y-4">
+                <div className="rounded-xl p-6 bg-white/92 border border-teal-100 shadow-md backdrop-blur-sm space-y-4 h-full">
                   <div className="space-y-2">
-                    <p className="text-xs font-semibold text-teal-600 uppercase tracking-wide">{panel.title}</p>
-                    <h4 className="text-2xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
+                    <p className="text-sm font-semibold text-teal-600 uppercase tracking-wide">{panel.title}</p>
+                    <h4 className="text-3xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
                   </div>
-                  <div className="space-y-1 text-sm font-medium text-teal-800">
+                  <div className="space-y-3 text-sm font-medium text-teal-800">
                     <div className="inline-flex items-center gap-2 w-full rounded-lg bg-teal-50 border border-teal-100 px-3 py-2">
                       <span>📅</span>
                       <span>{panel.date}</span>
@@ -273,7 +273,7 @@ export function AiScleratePanel() {
 
                 {/* Panel Speakers */}
                 <motion.div
-                  className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+                  className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
                   variants={containerVariants}
                 >
                   {panel.speakers.map((speaker) => (

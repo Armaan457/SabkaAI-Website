@@ -52,7 +52,7 @@ const aiHorizonsPanels: Panel[] = [
   {
     id: "workshop2",
     title: "Workshop 2",
-    topic: "Global AI Ethics",
+    topic: "Ethical AI: The Global Governance Framework",
     date: "16 January 2026",
     time: "5:00 PM - 7:00 PM",
     venue: "C Hall",
@@ -228,14 +228,14 @@ export function AiHorizonsPanel() {
         <div className="space-y-12">
           {aiHorizonsPanels.map((panel) => (
             <motion.div key={panel.id} className="space-y-4" variants={itemVariants}>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
                 {/* Panel Meta */}
-                <div className="rounded-xl p-6 bg-white/92 border border-violet-100 shadow-md backdrop-blur-sm space-y-4">
+                <div className="rounded-xl p-6 bg-white/92 border border-violet-100 shadow-md backdrop-blur-sm space-y-4 h-full">
                   <div className="space-y-2">
-                    <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">{panel.title}</p>
-                    <h4 className="text-2xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
+                    <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">{panel.title}</p>
+                    <h4 className="text-3xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
                   </div>
-                  <div className="space-y-1 text-sm font-medium text-indigo-800">
+                  <div className="space-y-4 text-sm font-medium text-indigo-800">
                     <div className="inline-flex items-center gap-2 w-full rounded-lg bg-indigo-50 border border-violet-100 px-3 py-2">
                       <span>📅</span>
                       <span>{panel.date}</span>
