@@ -34,7 +34,7 @@ const aiScleratePanels: Panel[] = [
       {
         id: "ps1",
         name: "Dr Chandrasekhar Buddha",
-        institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE.",
+        institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE, Ministry of Education.",
         image: "/speaker4.png",
         linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
       },
@@ -48,7 +48,7 @@ const aiScleratePanels: Panel[] = [
       {
         id: "ps3",
         name: "Rahul Bhargava",
-        institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com.",
+        institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com. 8 times TEDX speaker.",
         image: "/speaker1.png",
         linkedin: "https://www.linkedin.com/in/rahuldotbhargava/"
       }
@@ -65,7 +65,7 @@ const aiScleratePanels: Panel[] = [
       {
         id: "ps4",
         name: "Richa Marwah",
-        institution: "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India.",
+        institution: "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India. driving Digital Transformation",
         image: "/speaker6.png",
         linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/"
       },
@@ -248,28 +248,39 @@ export function AiScleratePanel() {
               className="space-y-4"
               variants={itemVariants}
             >
-              {/* Panel Header */}
-              <div className="rounded-xl p-6 bg-white/92 border border-teal-100 shadow-md backdrop-blur-sm">
-                <h4 className="text-2xl font-bold mb-1 text-gray-900">{panel.title}</h4>
-                <p className="text-lg font-semibold mb-3 text-teal-700">{panel.topic}</p>
-                <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-teal-800">
-                  <span className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 px-3 py-1 rounded-full">📅 {panel.date}</span>
-                  <span className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 px-3 py-1 rounded-full">⏰ {panel.time}</span>
-                  <span className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 px-3 py-1 rounded-full">📍 {panel.venue}</span>
-                </div>
-              </div>
-
-              {/* Panel Speakers */}
-              <motion.div
-                className="flex flex-wrap justify-center gap-5 sm:gap-6"
-                variants={containerVariants}
-              >
-                {panel.speakers.map((speaker) => (
-                  <div key={speaker.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-                    <PanelSpeakerCard speaker={speaker} />
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                {/* Panel Meta */}
+                <div className="rounded-xl p-6 bg-white/92 border border-teal-100 shadow-md backdrop-blur-sm space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-xs font-semibold text-teal-600 uppercase tracking-wide">{panel.title}</p>
+                    <h4 className="text-2xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
                   </div>
-                ))}
-              </motion.div>
+                  <div className="space-y-1 text-sm font-medium text-teal-800">
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-teal-50 border border-teal-100 px-3 py-2">
+                      <span>📅</span>
+                      <span>{panel.date}</span>
+                    </div>
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-teal-50 border border-teal-100 px-3 py-2">
+                      <span>⏰</span>
+                      <span>{panel.time}</span>
+                    </div>
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-teal-50 border border-teal-100 px-3 py-2">
+                      <span>📍</span>
+                      <span>{panel.venue}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Panel Speakers */}
+                <motion.div
+                  className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+                  variants={containerVariants}
+                >
+                  {panel.speakers.map((speaker) => (
+                    <PanelSpeakerCard key={speaker.id} speaker={speaker} />
+                  ))}
+                </motion.div>
+              </div>
             </motion.div>
           ))}
         </div>

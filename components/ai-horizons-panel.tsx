@@ -195,7 +195,7 @@ function PanelSpeakerCard({ speaker }: { speaker: PanelSpeaker }) {
 function EmptySpeakerCard() {
   return (
     <Card className="relative h-full p-6 text-center backdrop-blur-sm shadow-md bg-gradient-to-br from-white/90 to-violet-50/80 border-violet-200/60">
-      <p className="text-sm text-gray-700">Speakers to be announced.</p>
+      <p className="text-sm text-gray-700">More speakers are being confirmed.</p>
     </Card>
   );
 }
@@ -228,33 +228,41 @@ export function AiHorizonsPanel() {
         <div className="space-y-12">
           {aiHorizonsPanels.map((panel) => (
             <motion.div key={panel.id} className="space-y-4" variants={itemVariants}>
-              {/* Panel Header */}
-              <div className="rounded-xl p-6 bg-white/92 border border-violet-100 shadow-md backdrop-blur-sm">
-                <h4 className="text-2xl font-bold mb-3 text-gray-900">{panel.topic}</h4>
-                <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-indigo-800">
-                  <span className="inline-flex items-center gap-2 bg-indigo-50 border border-violet-100 px-3 py-1 rounded-full">📅 {panel.date}</span>
-                  <span className="inline-flex items-center gap-2 bg-indigo-50 border border-violet-100 px-3 py-1 rounded-full">⏰ {panel.time}</span>
-                  <span className="inline-flex items-center gap-2 bg-indigo-50 border border-violet-100 px-3 py-1 rounded-full">📍 {panel.venue}</span>
-                </div>
-              </div>
-
-              {/* Panel Speakers */}
-              <motion.div className="flex flex-wrap justify-center gap-5 sm:gap-6" variants={containerVariants}>
-                {panel.speakers.length === 0 ? (
-                  <div className="w-full md:w-1/2 lg:w-1/3">
-                    <EmptySpeakerCard />
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+                {/* Panel Meta */}
+                <div className="rounded-xl p-6 bg-white/92 border border-violet-100 shadow-md backdrop-blur-sm space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">{panel.title}</p>
+                    <h4 className="text-2xl font-bold text-gray-900 leading-snug">{panel.topic}</h4>
                   </div>
-                ) : (
-                  panel.speakers.map((speaker) => (
-                    <div
-                      key={speaker.id}
-                      className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]"
-                    >
-                      <PanelSpeakerCard speaker={speaker} />
+                  <div className="space-y-1 text-sm font-medium text-indigo-800">
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-indigo-50 border border-violet-100 px-3 py-2">
+                      <span>📅</span>
+                      <span>{panel.date}</span>
                     </div>
-                  ))
-                )}
-              </motion.div>
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-indigo-50 border border-violet-100 px-3 py-2">
+                      <span>⏰</span>
+                      <span>{panel.time}</span>
+                    </div>
+                    <div className="inline-flex items-center gap-2 w-full rounded-lg bg-indigo-50 border border-violet-100 px-3 py-2">
+                      <span>📍</span>
+                      <span>{panel.venue}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Panel Speakers */}
+                <motion.div
+                  className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+                  variants={containerVariants}
+                >
+                  {panel.speakers.length === 0 ? (
+                    <EmptySpeakerCard />
+                  ) : (
+                    panel.speakers.map((speaker) => <PanelSpeakerCard key={speaker.id} speaker={speaker} />)
+                  )}
+                </motion.div>
+              </div>
             </motion.div>
           ))}
         </div>
