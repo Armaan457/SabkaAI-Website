@@ -169,7 +169,7 @@ function PanelSpeakerCard({ speaker }: { speaker: PanelSpeaker }) {
 
             {speaker.linkedin && (
               <motion.div
-                className="pt-2 flex justify-center mt-auto"
+                className="flex justify-center mt-auto"
                 initial={{ opacity: 0.7, scale: 0.95 }}
                 whileHover={{ opacity: 1, scale: 1.05 }}
               >
