@@ -26,7 +26,7 @@ const aiScleratePanels: Panel[] = [
   {
     id: "panel1",
     title: "Panel 1",
-    topic: "Govt Policies around AI and AI in current scenario",
+    topic: "Govt Policies & AI Landscape",
     date: "17 January 2026",
     time: "11:30 AM - 12:10 PM",
     venue: "CSED Ground Floor",
@@ -57,7 +57,7 @@ const aiScleratePanels: Panel[] = [
   {
     id: "panel2",
     title: "Panel 2",
-    topic: "Future Placement and How to be relevant with AI for today's Youth ",
+    topic: "AI & Career Relevance for Youth",
     date: "17 January 2026",
     time: "12:20 PM - 1:00 PM",
     venue: "CSED Ground Floor",
@@ -71,10 +71,10 @@ const aiScleratePanels: Panel[] = [
       },
       {
         id: "ps5",
-        name: "Vinamra Harkar",
-        institution: "Researcher at NUS GeoSpatialX Lab. Graduate from NSUT with expertise in GeoAI and Computer Vision.",
-        image: "/speaker7.png",
-        linkedin: "https://www.linkedin.com/in/vinamraharkar/"
+        name: "Vinay Pratap Singh",
+        institution: "Senior Consultant at Microsoft. Technical Lead with over 14+ years of experience working on Cognitive Services & Azure Cloud.",
+        image: "/speaker3.png",
+        linkedin: "https://www.linkedin.com/in/vinay-pratap-singh-bhadauria/"
       },
       {
         id: "ps6",

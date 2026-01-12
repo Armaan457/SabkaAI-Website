@@ -43,7 +43,7 @@ const aiHorizonsPanels: Panel[] = [
         id: "wh1-richa",
         name: "Richa Marwah",
         institution:
-          "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India.",
+          "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India driving Digital Transformation",
         image: "/speaker6.png",
         linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/",
       },
