@@ -10,9 +10,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const LINKS = [
   { href: "#problems", label: "Problem Statements" },
   { href: "#timeline", label: "Timeline" },
+  { href: "#ai-horizons", label: "AI Horizons" },
+  { href: "#ai-xclerate", label: "AI-xclerate" },
   { href: "#prizes", label: "Prizes" },
   { href: "#registration", label: "Registration" },
-  { href: "#organizers", label: "Organizers and Judges" },
+  { href: "#organizers", label: "Organizers" },
   // { href: "#judges", label: "Judges" },
   { href: "#contact", label: "Contact & FAQ" },
 ];

@@ -5,6 +5,8 @@ import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { ProblemStatements } from "@/components/problem-statements";
 import { Timeline } from "@/components/timeline";
+import { AiScleratePanel } from "@/components/ai-xclerate-panel";
+import { AiHorizonsPanel } from "@/components/ai-horizons-panel";
 import { RegistrationForm } from "@/components/registration-form";
 import { Prizes } from "@/components/prizes";
 import { Organizers } from "@/components/organizers";
@@ -43,6 +45,24 @@ export default function Page() {
       >
         <div className="container mx-auto px-4">
           <Timeline />
+        </div>
+      </section>
+      <section
+        id="ai-horizons"
+        aria-labelledby="ai-horizons-title"
+        className="py-12 md:py-16 bg-secondary/10"
+      >
+        <div className="container mx-auto px-4">
+          <AiHorizonsPanel />
+        </div>
+      </section>
+      <section
+        id="ai-xclerate"
+        aria-labelledby="ai-xclerate-title"
+        className="py-12 md:py-16"
+      >
+        <div className="container mx-auto px-4">
+          <AiScleratePanel />
         </div>
       </section>
       <section

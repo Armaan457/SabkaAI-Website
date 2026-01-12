@@ -288,7 +288,7 @@ function PersonCard({ person, isSpeaker = false }: { person: Organizer; isSpeake
     roleText = 'text-blue-600';
   }
 
-  const linkedinBg = 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600';
+  const linkedinBg = 'bg-blue-600 hover:bg-blue-700';
 
   return (
     <motion.div
@@ -413,39 +413,7 @@ export function Organizers() {
         </motion.div>
       </motion.div>
 
-      {/* Judges Section */}
-      <motion.div
-        className="space-y-6"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={containerVariants}
-      >
-        <motion.div className="text-center space-y-2" variants={itemVariants}>
-          <motion.div className="flex justify-center mb-1">
-            <div className="inline-block px-4 py-1 bg-gradient-to-r from-teal-100 to-teal-200 rounded-full">
-              <p className="text-sm font-semibold text-teal-700">Experts Panel</p>
-            </div>
-          </motion.div>
-          <h3 className="text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-teal-400">
-            Meet Our Judges and Speakers
-          </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto text-base">
-            Experienced professionals and industry experts who will evaluate and judge the projects at the hackathon as well as lead insightful sessions.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-wrap justify-center gap-5 sm:gap-6"
-          variants={containerVariants}
-        >
-          {judges.map((judge) => (
-            <div key={judge.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-              <PersonCard person={judge} isSpeaker={true} />
-            </div>
-          ))}
-        </motion.div>
-      </motion.div>
+      {/* Judges Section removed as per request */}
 
       <motion.div
         className="space-y-6"
