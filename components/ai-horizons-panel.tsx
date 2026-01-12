@@ -228,7 +228,7 @@ export function AiHorizonsPanel() {
         <div className="space-y-12">
           {aiHorizonsPanels.map((panel) => (
             <motion.div key={panel.id} className="space-y-4" variants={itemVariants}>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                 {/* Panel Meta */}
                 <div className="rounded-xl p-6 bg-white/92 border border-violet-100 shadow-md backdrop-blur-sm space-y-4">
                   <div className="space-y-2">
