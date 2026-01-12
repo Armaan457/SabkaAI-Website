@@ -221,7 +221,7 @@ export function ProblemStatements() {
 
       {/* Problem Statements Grid */}
       <motion.div
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -233,10 +233,12 @@ export function ProblemStatements() {
               variants={itemVariants}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
+              className="h-full"
             >
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
+                className="h-full"
               >
                 <Card 
                   className="group relative p-6 transition-all duration-300 hover:shadow-2xl cursor-pointer border-2 border-[rgba(32,184,205,0.35)] bg-gradient-to-br from-white to-[rgba(32,184,205,0.05)] hover:border-[var(--brand-primary)] h-full"
