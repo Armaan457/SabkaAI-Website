@@ -26,7 +26,7 @@ const aiHorizonsPanels: Panel[] = [
   {
     id: "workshop1",
     title: "Workshop 1",
-    topic: "Digital Transformation & AI in Industry",
+    topic: "Digital Transformation & AI in Public Sector",
     date: "16 January 2026",
     time: "3:00 PM - 5:00 PM",
     venue: "C Hall",
