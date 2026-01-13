@@ -58,7 +58,7 @@ const aiScleratePanels: Panel[] = [
       {
         id: "ps4",
         name: "Richa Marwah",
-        institution: "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India. driving Digital Transformation",
+institution: "Co-Founder, Bharat Digital; Team Lead, Ministry of Rural Development (Govt. of India); 13+ years in public digital systems.",
         image: "/speaker6.png",
         linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/"
       },

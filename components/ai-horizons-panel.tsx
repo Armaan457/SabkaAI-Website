@@ -35,15 +35,14 @@ const aiHorizonsPanels: Panel[] = [
         id: "wh1-vinamra",
         name: "Vinamra Harkar",
         institution:
-          "Co-Founder of Bharat Digital, Researcher at NUS GeoSpatialX Lab. Graduate from NSUT with expertise in GeoAI and Computer Vision.",
+          "Co-Founder of Bharat Digital, Researcher at NUS GeoSpatialX Lab. Graduate from NSUT with expertise in Computer Vision.",
         image: "/speaker7.png",
         linkedin: "https://www.linkedin.com/in/vinamraharkar/",
       },
       {
         id: "wh1-richa",
         name: "Richa Marwah",
-        institution:
-          "Co-Founder of Bharat Digital, team lead at Ministry of Rural Development, Govt. of India driving Digital Transformation",
+institution: "Co-Founder, Bharat Digital; Team Lead, Ministry of Rural Development (Govt. of India); 13+ years in public digital systems.",
         image: "/speaker6.png",
         linkedin: "https://www.linkedin.com/in/richa-marwah-30a874157/",
       },
