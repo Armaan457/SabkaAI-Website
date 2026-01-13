@@ -39,13 +39,6 @@ const aiScleratePanels: Panel[] = [
         linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
       },
       {
-        id: "ps2",
-        name: "Prerna Mukharya",
-        institution: "Founder of Outline India. Research background from Harvard, MIT, and the Centre for Policy Research.",
-        image: "/speaker5.png",
-        linkedin: "https://www.linkedin.com/in/prernamukharya/"
-      },
-      {
         id: "ps3",
         name: "Rahul Bhargava",
         institution: "Founder and Managing Director of R Dot Ventures, Shekunj.com, and OctaHire.com. 8 times TEDX speaker.",
