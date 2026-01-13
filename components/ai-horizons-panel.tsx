@@ -32,14 +32,6 @@ const aiHorizonsPanels: Panel[] = [
     venue: "C Hall",
     speakers: [
       {
-        id: "wh1-vinamra",
-        name: "Vinamra Harkar",
-        institution:
-          "Manager, Founder's Office - Bharat Digital, Ex- Legislative Assistant to Member of Parliament (LAMP)",
-        image: "/speaker7.png",
-        linkedin: "https://www.linkedin.com/in/vinamraharkar/",
-      },
-      {
         id: "wh1-richa",
         name: "Richa Marwah",
 institution: "Co-Founder, Bharat Digital; AI Product Manager at the Ministry of Rural Development, GoI. 13+ years in digital systems.",
