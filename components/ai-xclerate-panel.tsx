@@ -34,7 +34,7 @@ const aiScleratePanels: Panel[] = [
       {
         id: "ps1",
         name: "Dr Chandrasekhar Buddha",
-        institution: "CEO of Anuvadini AI , Ministry of Education and COO at AICTE, Ministry of Education.",
+        institution: "CEO of Anuvadini AI , Ministry of Education and CCO at AICTE, Ministry of Education.",
         image: "/speaker4.png",
         linkedin: "https://www.linkedin.com/in/chandrasekharbudha/"
       },
