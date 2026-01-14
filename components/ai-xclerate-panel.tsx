@@ -29,7 +29,7 @@ const aiScleratePanels: Panel[] = [
     topic: "Govt Policies & AI Landscape",
     date: "17 January 2026",
     time: "11:30 AM - 12:10 PM",
-    venue: "CSED Ground Floor",
+    venue: "Main Auditorium, TIET",
     speakers: [
       {
         id: "ps1",
@@ -53,7 +53,7 @@ const aiScleratePanels: Panel[] = [
     topic: "AI & Career Relevance for Youth",
     date: "17 January 2026",
     time: "12:20 PM - 1:00 PM",
-    venue: "CSED Ground Floor",
+    venue: "Main Auditorium, TIET",
     speakers: [
       {
         id: "ps4",

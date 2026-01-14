@@ -29,7 +29,7 @@ const aiHorizonsPanels: Panel[] = [
     topic: "Digital Transformation & AI in Public Sector",
     date: "16 January 2026",
     time: "3:00 PM - 5:00 PM",
-    venue: "C Hall",
+    venue: "C Hall, TIET",
     speakers: [
       {
         id: "wh1-richa",
@@ -46,7 +46,7 @@ institution: "Co-Founder, Bharat Digital; AI Product Manager at the Ministry of 
     topic: "Ethical AI: The Global Governance Framework",
     date: "16 January 2026",
     time: "5:00 PM - 7:00 PM",
-    venue: "C Hall",
+    venue: "C Hall, TIET",
     speakers: [
       {
         id: "wh2-rahul",
