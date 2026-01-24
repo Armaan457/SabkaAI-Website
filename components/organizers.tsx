@@ -92,7 +92,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc1",
     name: "Armaan Jagirdar",
-    role: "Overall Event Coordinator",
+    role: "Overall Technical Coordinator",
     image: "/armaan.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/armaan-jagirdar-183b47285/"
@@ -100,7 +100,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc2",
     name: "Harsimran Singh",
-    role: "Overall Event Coordinator",
+    role: "Overall Hackathon   Coordinator",
     image: "/harsimran.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/harsimran-singh-dalal-614a39286/"
@@ -108,7 +108,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc3",
     name: "Lakshya Manchanda",
-    role: "Overall Event Coordinator",
+    role: "Overall Marketing Coordinator",
     image: "/lakshya.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/lakshyamanchanda/"
@@ -116,7 +116,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc4",
     name: "Nakul Sharma",
-    role: "Overall Event Coordinator",
+    role: "Overall Hackathon Coordinator",
     image: "/nakul.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/nakulsharma20/"
@@ -124,7 +124,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc5",
     name: "Nityam",
-    role: "Overall Event Coordinator",
+    role: "Overall Technical Coordinator",
     image: "/nityam.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/nityamt19/"
@@ -132,7 +132,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc6",
     name: "Tamanna Bhardwaj",
-    role: "Overall Event Coordinator",
+    role: "Overall Design Coordinator",
     image: "/tamanna.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/tamanna-bhardwaj-96429b230/"
@@ -140,7 +140,7 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc7",
     name: "Ikansh Mahajan",
-    role: "Overall Event Coordinator",
+    role: "Overall Design Coordinator",
     image: "/ikansh.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/ikabrain/"
@@ -148,10 +148,42 @@ const studentCoordinators: Organizer[] = [
   {
     id: "sc8",
     name: "Sparsh Aggarwal",
-    role: "Overall Event Coordinator",
+    role: "Overall Design Coordinator",
     image: "/sparsh.png",
     institution: "",
     linkedin: "https://www.linkedin.com/in/sparshagarwal080/"
+  },
+  {
+    id: "sc10",
+    name: "Disha Aggarwal",
+    role: "Overall Workshop Coordinator",
+    image: "/disha.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/disha-garg-96550722a/"
+  },
+  {
+    id: "sc11",
+    name: "Sonali Gupta",
+    role: "Overall Workshop Coordinator",
+    image: "/sonali.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/sonali-gupta-1b7756260/"
+  },
+  {
+    id: "sc12",
+    name: "Aviral Bhargava",
+    role: "Overall Media Coordinator",
+    image: "/aviral.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/aviral-bhargava-84899a29a/"
+  },
+  {
+    id: "sc13",
+    name: "Ishaan Jindal",
+    role: "Overall Setup Coordinator",
+    image: "/ishaan.png",
+    institution: "",
+    linkedin: "https://www.linkedin.com/in/dir-ishaan-jindal-804596284/"
   }
 ];
 
@@ -390,7 +422,7 @@ export function Organizers() {
           variants={containerVariants}
         >
           {studentCoordinators.map((coordinator) => (
-            <div key={coordinator.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+            <div key={coordinator.id} className="w-[calc(50%-0.625rem)] sm:w-[calc(50%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
               <PersonCard person={coordinator} isSpeaker={false} />
             </div>
           ))}
