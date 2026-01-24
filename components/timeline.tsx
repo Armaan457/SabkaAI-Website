@@ -17,12 +17,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const INDIA_EVENTS = [
   {
-    title: "Online Pitching",
-    icon: Presentation,
-    date: "28 December 2025",
-    description: "Selected teams present their solutions online",
-  },
-  {
     title: "Results Announcement",
     icon: Trophy,
     date: "07 January 2026",
@@ -50,12 +44,6 @@ const INDIA_EVENTS = [
 
 const UQ_EVENTS = [
   {
-    title: "Online Pitching",
-    icon: Presentation,
-    date: "04 January 2026",
-    description: "Selected teams present their solutions online",
-  },
-  {
     title: "Results Announcement",
     icon: Trophy,
     date: "07 January 2026",
@@ -71,7 +59,7 @@ const UQ_EVENTS = [
     title: "AI-xclerate",
     icon: Users,
     date: "17 January 2026",
-    description: "Panel discussion with AI experts",
+    description: "Panel discussion with AI experts on multiple domains",
   },
   {
     title: "Innovation Challenge",
@@ -205,7 +193,7 @@ export function Timeline() {
                 {currentEvents.map((event, index) => {
                   const IconComponent = event.icon;
                   const isCompleted = false;
-                  const isCurrent = index === 1;
+                  const isCurrent = index === 3;
 
                   return (
                     <motion.div
