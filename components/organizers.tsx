@@ -155,7 +155,7 @@ const studentCoordinators: Organizer[] = [
   },
   {
     id: "sc10",
-    name: "Disha Aggarwal",
+    name: "Disha Garg",
     role: "Overall Workshop Coordinator",
     image: "/disha.png",
     institution: "",
